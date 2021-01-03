@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ANSWER｜Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="container-fluid pl-0">
+    <div class="row">
+      <div class="sidebar col-md-3 bg-secondary d-flex flex-column justify-content-between">
+        <div>
+          <h1 class="sidebar__title ml-5 my-5">
+          <a href="index.html">
+            <img src="./assets/images/logo-ANSWER.svg" alt="logo">
+          </a>
+        </h1>
+        <ul class="sidebar__menu list-unstyled">
+        <li>
+          <a href="#" class="mb-2 pl-5 py-2">
+          <span class="material-icons">poll</span>
+          Dashboard</a>
+        </li>
+        <li><a href="#" class="mb-2 pl-5 py-2">
+          <span class="material-icons">question_answer</span>
+          Question</a></li>
+        <li><a href="#" class="mb-2 pl-5 py-2">
+          <span class="material-icons">assignment</span>
+          Assignment</a></li>
+        <li><a href="#" class="mb-2 pl-5 py-2">
+          <span class="material-icons">video_library</span>
+          Course</a></li>
+        <li><a href="admin.html" class="active mb-2 pl-5 py-2">
+          <span class="material-icons">people</span>
+          Admin</a></li>
+        <li><a href="#" class="mb-2 pl-5 py-2">
+          <span class="material-icons">settings</span>
+          Settings
+        </a></li>
+        </ul>
+
+        </div>
+        <div class="sidebar__user d-flex align-items-center ml-5 pb-5">
+          <img src="./assets/images/andychen.jpeg" alt="andy" class="image rounded-circle mr-3">
+          <div class="d-flex flex-column">
+            <p class="mb-0">Andy Chen</p>
+            <p class="text-muted mb-0">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 pt-5 px-5">
+        
+<header class="mb-6">
+  <div class="d-flex align-items-center">
+    <h1 class="h4 mr-5">Admin</h1>
+    <button type="button" class="btn font-weight-bold" data-toggle="modal" data-target="#AddNewAdmin">
+      <span class="material-icons pr-2 text-primary" aria-hidden>add</span>
+      Add New Admin
+    </button>
+    <ul class="d-flex ml-auto list-unstyled align-items-center mb-0">
+      <li class="nav-item">
+        <a href="#" class="nav-link py-0 line-height-1">
+          <span class="material-icons">search</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link py-0 pr-0 line-height-1">
+          <span class="material-icons">notifications_active</span>        
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<main>
+    <table class="table table-hover">
+      <thead class="thead">
+        <tr>
+          <th scope="col" class="py-1 pl-0">
+            ID
+            <i class="material-icons text-primary font-weight-bold font-size-sm align-middle">arrow_downward</i>
+          </th>
+          <th scope="col" class="py-1 pl-0">Name</th>
+          <th scope="col" class="py-1 pl-0">Email</th>
+          <th scope="col" class="py-1 pl-0">Verified</th>
+          <th scope="col" class="py-1 pl-0" width="87"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#1</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#2</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#3</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#4</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#5</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#6</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#7</td>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#8</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#9</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>#10</td>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="pt-0">
+            <div class="btn-group" role="group" aria-label="btn-group">
+              <button type="button" class="btn py-3" data-toggle="modal" data-target="#view">
+                <span class="material-icons">visibility</span>
+              </button>
+              <button type="button" class="btn pr-0" data-toggle="modal" data-target="#EditAdmin">
+                <span class="material-icons">edit</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link border-primary font-weight-bold" href="#" aria-label="Previous">
+            <span calss="text-primary"><</span>
+          </a>
+        </li>
+        <li class="page-item active"><a class="page-link border-primary" href="#">1</a></li>
+        <li class="page-item"><a class="page-link border-primary" href="#">2</a></li>
+        <li class="page-item"><a class="page-link border-primary" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link border-primary font-weight-bold" href="#" aria-label="Next">
+            <span calss="text-primary">></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Add New Admin Modal -->
+    <div class="modal fade" id="AddNewAdmin" tabindex="-1" role="dialog" aria-labelledby="AddNewAdminTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0 p-5">
+            <h5 class="modal-title" id="AddNewAdminTitle">New Admin</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body px-5 py-0">
+              <div class="border-bottom pb-2 mb-4">
+                <p class="h5 font-weight-bold mb-3">Account</p>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control custom-input-height p-3 border-dark" id="name" aria-describedby="nameHelp">
+                </div>
+                <div class="form-group">
+                  <label for="Email">Email</label>
+                  <input type="email" class="form-control custom-input-height p-3 border-dark" id="Email" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="border-bottom pb-4 mb-4">
+                <p class="h5 font-weight-bold mb-3">Verification</p>
+                <p class="font-weight-bold mb-3">
+                  <span class="material-icons mr-2 align-top text-warning">warning</span>
+                  unverified
+                </p>
+                <button type="button" 
+                  class="btn btn-outline-primary btn-block py-3">Send Verification Mail</button>
+              </div>
+              <div class="border-bottom pb-4 mb-4">
+                <div class="form-group">
+                  <label for="levelSelect" class="h5 font-weight-bold mb-3">Access Level</label>
+                  <select class="form-control border-dark p-3 custom-input-height" id="levelSelect">
+                    <option selected disabled>-Choose access level-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="pb-4">
+                <p class="h5 font-weight-bold mb-3">Custom Access</p>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="lecture">
+                  <label class="custom-control-label" for="lecture">lecture</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="Coupon" id="Coupon">
+                  <label class="custom-control-label" for="Coupon">
+                    Coupon
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="Message" id="Message">
+                  <label class="custom-control-label" for="Message">
+                    Message
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="Setting" id="Setting">
+                  <label class="custom-control-label" for="Setting">
+                    Setting
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="task menu" id="task">
+                  <label class="custom-control-label" for="task">
+                    task menu
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer border-top-0">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Edit Admin Modal -->
+    <div class="modal fade" id="EditAdmin" tabindex="-1" role="dialog" aria-labelledby="EditAdminTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0 p-5">
+            <h5 class="modal-title" id="EditAdminTitle">Edit Admin</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form>
+            <div class="modal-body px-5 py-0">
+              <div class="border-bottom pb-2 mb-4">
+                <p class="h5 font-weight-bold mb-3">Account</p>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" value="Emir Wicks"
+                    class="form-control custom-input-height p-3 bg-secondary border-0" id="name" aria-describedby="nameHelp">
+                </div>
+                <div class="form-group">
+                  <label for="Email">Email</label>
+                  <input type="email" value="emir.wicks@mail.com"
+                    class="form-control custom-input-height p-3 bg-secondary border-0" id="Email" aria-describedby="emailHelp">
+                </div>
+              </div>
+              <div class="border-bottom pb-4 mb-4">
+                <p class="h5 font-weight-bold mb-3">Verification</p>
+                <div class="d-flex justify-content-between">
+                  <p class="font-weight-bold mb-3">
+                    <span class="material-icons mr-2 align-top text-primary">check_circle</span>
+                    Verified
+                  </p>
+                  <p class="font-size-sm">2020/4/12</p>
+                </div>
+                <button type="button" disabled
+                  class="btn btn-outline-primary btn-block py-3">Send Verification Mail</button>
+              </div>
+              <div class="border-bottom pb-2 mb-4">
+                <div class="form-group">
+                  <label for="levelSelect" class="h5 font-weight-bold mb-3">Access Level</label>
+                  <select class="form-control border-dark p-3 custom-input-height" id="levelSelect">
+                    <option disabled>-Choose access level-</option>
+                    <option selected value="Admin">Admin</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="border-bottom pb-2 mb-4">
+                <p class="h5 font-weight-bold mb-3">Custom Access</p>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="edit-lecture">
+                  <label class="custom-control-label" for="edit-lecture">lecture</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="Coupon" id="edit-coupon">
+                  <label class="custom-control-label" for="edit-coupon">
+                    Coupon
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="Message" id="edit-message">
+                  <label class="custom-control-label" for="edit-message">
+                    Message
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="Setting" id="edit-setting">
+                  <label class="custom-control-label" for="edit-setting">
+                    Setting
+                  </label>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input class="custom-control-input" type="checkbox" value="task menu" id="edit-task">
+                  <label class="custom-control-label" for="edit-task">
+                    task menu
+                  </label>
+                </div>
+              </div>
+              <div class="pb-4 mb-2">
+                <p class="h5 font-weight-bold mb-3">Deactivate Account</p>
+                <p class="font-weight-bold text-warning mb-3">
+                  <span class="material-icons mr-2 align-top">warning</span>
+                  This cannot be undone!
+                </p>
+                <button type="button" 
+                  class="btn btn-outline-warning btn-block py-3">Deactivate This Account</button>
+              </div>
+            </div>
+            <div class="modal-footer border-top-0">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>   
+    <!-- View Admin Modal -->
+    <div class="modal fade" id="view" tabindex="-1" role="dialog" aria-labelledby="viewTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body pt-5 pr-3 pl-5 pb-3">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 admin-img"></div>
+                <div class="col-md-7">
+                  <ul class="list-unstyled mb-2">
+                    <li class="d-flex justify-content-between mb-1">
+                      <p>#1</p>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </li>
+                    <li>Admin</li>
+                    <li class="font-weight-bold h4 mb-1">Emir Wicks</li>
+                    <li class="text-light font-size-sm mb-2">emir.wicks@mail.com</li>
+                    <li class="d-flex justify-content-between">
+                      <div class="bg-secondary p-1">verified</div>
+                      <button class="btn close" type="button" data-toggle="collapse" data-target="#collapse-view-admin" aria-expanded="false" aria-controls="collapse-view-admin">
+                        <span class="material-icons text-primary">expand_less</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="collapse pb-3 pt-4" id="collapse-view-admin">
+                    <div class="d-flex">
+                      <button type="button" class="btn btn-outline-warning flex-grow-1 mr-3" data-dismiss="modal">deactivate</button>
+                      <button type="button" class="btn btn-primary flex-grow-1"
+                        data-toggle="modal" data-target="#EditAdmin" data-dismiss="modal">
+                        edit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+      </div>
+    
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
